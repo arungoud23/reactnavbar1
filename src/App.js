@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+// import {Answer} from '../components/Answer'
 
+let links = ["services","Projects","About"]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>Home</div>
+     <div className="middle">
+       {links.map((sub)=>(
+         <Answer name={sub}/>
+       ))}
+      
+     </div>
+     <button className='btn'>contact</button>
     </div>
   );
 }
+
+const Answer = (props) =>{
+  return <p>{props.name}</p>
+}
+
+// export {Answer
 
 export default App;

@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width:80%;
+  height: 80px;
+  background-color: black;
+  color: white;
+  align-items: center;
+   margin:auto;
 }
 
 .App-logo {
@@ -36,3 +44,15 @@
     transform: rotate(360deg);
   }
 }
+
+.middle{
+  width:200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  border-radius: 50px;
+  background-color: skyblue;
+}
+
